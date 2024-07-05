@@ -1,5 +1,5 @@
 <h1 style="text-align: center;">
-  <img src="pipeline.png" alt="OrgLine Logo" width="200">
+  <img src="pipeline.png" alt="OrgLine Logo">
 </h1>
 
 
