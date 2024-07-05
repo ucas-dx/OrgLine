@@ -7,6 +7,12 @@ OrgLine, the first multitask analysis pipeline for organoids, which leverages a 
 
 
 ## Getting Started
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ultralytics?logo=python&logoColor=gold)
+```bash
+conda create -n orgline python=3.10
+conda activate orgline
+python install_env.py
+```
 
 
 
