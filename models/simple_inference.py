@@ -72,11 +72,8 @@ if not os.path.exists(seg_path):
 else:
     print(f"File already exists at {seg_path}.")
 
-# 获取当前脚本的绝对路径
 current_script_path = os.path.abspath(__file__)
-# 获取当前脚本的目录
 current_script_dir = os.path.dirname(current_script_path)
-# 将目录与文件名拼接
 model_path = os.path.join(current_script_dir, 'orgline.onnx')
 
 def nms(pred, conf_thres, iou_thres):
@@ -206,7 +203,7 @@ class OrgAnalysis:
 
         if show_bboxes:
             num_rows = len(image_paths) // num_images_per_row + (len(image_paths) % num_images_per_row > 0)
-            plt.figure(figsize=(20, num_rows * 5), dpi=300)  # 动态设置画布高度
+            plt.figure(figsize=(20, num_rows * 5), dpi=300)  
 
             for idx, image_path in enumerate(image_paths):
                 img_abs_path = os.path.abspath(image_path)
@@ -292,9 +289,9 @@ class OrgAnalysis:
             num_rows = len(image_paths) // num_images_per_row + (len(image_paths) % num_images_per_row > 0)
             fig, axs = plt.subplots(num_rows, num_images_per_row, figsize=(20, num_rows * 5), dpi=300)
             axs = axs.flatten()  # Flatten the 2D array of axes
-            plt.figure(figsize=(20, num_rows * 5), dpi=300)  # 动态设置画布高度
+            plt.figure(figsize=(20, num_rows * 5), dpi=300)  
 
-            for idx, image_file in enumerate(image_paths):  # 仅测试前两张
+            for idx, image_file in enumerate(image_paths):  
                 image_file = os.path.abspath(image_file)
                 #print(image_file)
                 img = cv2.imread(image_file)
