@@ -14,8 +14,6 @@ import cv2
 import matplotlib.pyplot as plt
 from concurrent.futures import ThreadPoolExecutor
 import os
-import os
-import os
 import requests
 from tqdm import tqdm
 
