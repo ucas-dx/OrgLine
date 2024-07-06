@@ -21,7 +21,8 @@ python install_env.py
 python models/simple_inference.py
 ```
 - Jupyter
-You can run the contents of the [SimpleOperation.ipynb](https://github.com/ucas-dx/OrgLine/blob/main/SimpleOperation.ipynb) file, and all processes will be automated.
+
+  You can run the contents of the [SimpleOperation.ipynb](https://github.com/ucas-dx/OrgLine/blob/main/SimpleOperation.ipynb) file, and all processes will be automated.
 ```bash
 from models.simple_inference import OrgAnalysis
 image_folder = 'images'
