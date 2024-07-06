@@ -16,7 +16,8 @@ conda activate orgline
 conda install git
 git clone https://github.com/ucas-dx/OrgLine.git
 cd OrgLine
-python install_env.py 
+python install_env.py
+conda install conda-forge::vs2015_runtime 
 ```
 - Quick usage
 ```bash
