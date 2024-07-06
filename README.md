@@ -10,28 +10,28 @@ OrgLine, the first multitask analysis pipeline for organoids, which leverages a 
 - Environment Setup Configuration
   
   Automatic environment setup, please be patient.
-```bash
-conda create -n orgline python=3.10
-conda activate orgline
-conda install git
-git clone https://github.com/ucas-dx/OrgLine.git
-cd OrgLine
-python install_env.py
-conda install conda-forge::vs2015_runtime 
-```
+  ```bash
+  conda create -n orgline python=3.10
+  conda activate orgline
+  conda install git
+  git clone https://github.com/ucas-dx/OrgLine.git
+  cd OrgLine
+  python install_env.py
+  conda install conda-forge::vs2015_runtime 
+  ```
 - Quick usage
-```bash
-cd models & python simple_inference.py
-```
+  ```bash
+  cd models & python simple_inference.py
+  ```
 - Jupyter
 
   You can run the contents of the [SimpleOperation.ipynb](https://github.com/ucas-dx/OrgLine/blob/main/SimpleOperation.ipynb) file, and all processes will be automated.
-```bash
-from models.simple_inference import OrgAnalysis
-image_folder = 'images'
-org_analysis = OrgAnalysis(image_folder)
-org_analysis.analyze()
-```
+  ```bash
+  from models.simple_inference import OrgAnalysis
+  image_folder = 'images'
+  org_analysis = OrgAnalysis(image_folder)
+  org_analysis.analyze()
+  ```
   
  
 
