@@ -7,6 +7,7 @@ OrgLine, the first multitask analysis pipeline for organoids, which leverages a 
 
 ## Getting Started
  <img src="https://camo.githubusercontent.com/eead68545f3aecadceca3a53cc6adcf6191e11ba8d598feab7f00615fa4e95ea/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f756c7472616c79746963733f6c6f676f3d707974686f6e266c6f676f436f6c6f723d676f6c64" alt="python version">
+ 
 - Environment Setup Configuration
   
   Automatic environment setup, please be patient.
