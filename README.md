@@ -30,8 +30,12 @@ OrgLine, the first multitask analysis pipeline for organoids, which leverages a 
   from models.simple_inference import OrgAnalysis
   image_folder = 'images'
   org_analysis = OrgAnalysis(image_folder)
-  org_analysis.analyze()
+  org_analysis.analyze(show_seg=True,show_bboxes=False)
   ```
+  <p align="center">
+  <img src="https://github.com/ucas-dx/OrgLine/blob/main/output.png" alt="Output Image">
+  </p>
+
   
  
 
