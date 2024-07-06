@@ -21,7 +21,7 @@ conda install conda-forge::vs2015_runtime
 ```
 - Quick usage
 ```bash
-cd models &python simple_inference.py
+cd models & python simple_inference.py
 ```
 - Jupyter
 
