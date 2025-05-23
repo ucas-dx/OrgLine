@@ -6,7 +6,7 @@
 OrgLine, the first multitask analysis pipeline for organoids, which leverages a pretrained detector and a vision foundational model to facilitate large-scale automated cultivation and analysis of organoids. OrgLine achieves precise localization, counting, classification, and segmentation of organoids, providing a foundational and efficient analytical support system.
 
 ## Getting Started
- <img src="https://img.shields.io/badge/python-3.11.8-gold" alt="Python Version">
+<img src="https://img.shields.io/badge/python-3.10.x%20|%203.11.x-blueviolet" alt="Python 3.10.x | 3.11.x">
  
 - Environment Setup Configuration
   
