@@ -1,0 +1,8 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+path: PDAC
+train: train 
+val: train
+test: train  
+# number of classes
+nc: 1
+names: ['organoid']

@@ -1,0 +1,99 @@
+# ============================================================================
+# OrgLine - AI-Driven Versatile Pipeline for Organoid Analysis
+# Requirements file for all dependencies
+# ============================================================================
+
+# PyTorch and Deep Learning Framework
+# Note: Install with CUDA support using:
+# pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
+torch==2.4.0
+torchvision==0.19.0
+torchaudio==2.4.0
+
+# Computer Vision and Image Processing
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0
+pillow>=8.0.0
+imageio>=2.9.0
+scikit-image>=0.18.0
+
+# Scientific Computing and Numerical Libraries
+numpy>=1.21.0
+scipy>=1.7.0
+pandas>=1.3.0
+
+# Deep Learning Utilities
+einops>=0.6.0                 # Tensor operations for transformers
+timm>=0.9.0                   # Pre-trained models library
+albumentations>=1.0.0         # Data augmentation
+
+# Machine Learning
+scikit-learn>=1.0.0
+seaborn>=0.13.2
+
+# Visualization and Plotting
+matplotlib>=3.3.0
+seaborn>=0.11.0
+plotly>=5.0.0
+roifile>=2025.5.10
+# Configuration Management
+hydra-core>=1.1.0
+omegaconf>=2.1.0
+
+# Progress Bars and Utilities
+tqdm>=4.62.0
+rich>=10.0.0                  # Better terminal output
+
+# System and Performance Monitoring
+psutil>=5.0.0
+pynvml>=11.0.0               # NVIDIA GPU monitoring
+
+# File I/O and Data Formats
+h5py>=3.1.0
+pycocotools>=2.0.4           # COCO dataset format
+json5>=0.9.0
+
+# Segment Anything Model (SAM) dependencies
+# Note: Install SAM2 separately:
+# pip install git+https://github.com/facebookresearch/segment-anything-2.git
+
+# Optional: Weights & Biases for experiment tracking
+#wandb>=0.12.0
+
+# Optional: Jupyter and Interactive Development
+#jupyter
+#notebook>=6.0.0
+#ipywidgets>=7.6.0
+
+# Optional: API and Web Interface
+fastapi>=0.68.0
+uvicorn>=0.15.0
+gradio>=3.0.0
+
+# Development and Testing Dependencies (optional)
+pytest>=6.0.0
+pytest-cov>=2.0.0
+pytest-xdist>=2.4.0
+
+# Code Quality and Formatting
+black>=21.0.0
+flake8>=3.9.0
+isort>=5.9.0
+mypy>=0.910
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+myst-parser>=0.15.0
+
+# Version Control Hooks
+pre-commit>=2.15.0
+
+# Memory and Performance Optimization
+memory-profiler>=0.60.0
+line-profiler>=3.3.0
+
+# Additional Utilities
+click>=8.0.0                 # Command line interface
+colorama>=0.4.4              # Colored terminal output
+tabulate>=0.8.9              # Table formatting

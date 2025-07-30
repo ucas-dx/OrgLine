@@ -1,0 +1,4 @@
+Image,Instance_ID_count,Area_pixels_mean,Area_pixels_std,Area_pixels_min,Area_pixels_max,Perimeter_pixels_mean,Perimeter_pixels_std,Circularity_mean,Circularity_std,Solidity_mean,Solidity_std,Aspect_Ratio_mean,Aspect_Ratio_std,Compactness_mean,Compactness_std
+1,76,578.086,736.657,109.0,6158.0,84.431,38.144,0.871,0.045,0.973,0.012,0.993,0.105,1.153,0.084
+32,12,36298.75,41316.473,1300.0,142356.0,645.984,374.42,0.798,0.132,0.986,0.008,0.895,0.291,1.31,0.383
+Human_1_004h_patch_0,26,549.154,531.169,92.5,2307.5,82.499,40.13,0.855,0.052,0.97,0.012,1.049,0.178,1.174,0.086

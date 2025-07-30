@@ -1,0 +1,25 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# YOLOv8 object detection model with P3-P5 outputs. For Usage examples see https://docs.ultralytics.com/tasks/detect
+
+# Parameters
+nc: 1  # number of classes
+scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
+  # [depth, width, max_channels]
+  n: [1, 0.5, 1024]  #
+
+
+
+backbone:
+  # [from, repeats, module, args]
+  - [-1, 1, hiera3_tiny, []]  # 4
+  - [-1, 1, SPPF, [1024, 5]]  # 5
+
+# YOLOv8.0n head
+head:
+  - [ 1, 1, Conv, [ 128, 1, 1 ] ]#6
+  - [ 2, 1, Conv, [ 256, 1, 1 ] ]#7
+  - [ 3, 1, Conv, [ 512, 1, 1 ] ]#8
+  - [ 5, 1, Conv, [ 1024, 1, 1 ] ]#9
+  - [[6,7,8,9], 1, Detect_AFPN_P2345_Custom, [nc, 256, 'RepConv']]  # Detect(P3, P4, P5)
+
+

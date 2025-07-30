@@ -1,0 +1,22 @@
+Morphology Analysis Report
+==================================================
+
+Number of images analyzed: 3
+Total number of instances detected: 114
+Average instances per image: 38.0
+
+Size Statistics:
+  Mean area: 4331.6 ± 16967.1 pixels
+  Area range: 92.5 - 142356.0 pixels
+  Mean perimeter: 143.1 ± 212.1 pixels
+
+Shape Features:
+  Mean circularity: 0.860 ± 0.064
+  Mean solidity: 0.974 ± 0.012
+  Mean aspect ratio: 0.996 ± 0.156
+  Mean compactness: 1.174 ± 0.151
+
+Shape Classification:
+  Circular objects (circularity > 0.8): 105 (92.1%)
+  Elongated objects (aspect ratio > 2.0): 0 (0.0%)
+  Irregular objects (solidity < 0.8): 0 (0.0%)
