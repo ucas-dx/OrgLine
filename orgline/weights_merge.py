@@ -261,11 +261,6 @@ def merge_and_load_model_weights(model, lightweight_path, sam_path, save_path=No
         model: Model object with loaded weights, None if failed
 
     Example:
-        from ultralytics import YOLO
-
-        # Initialize model
-        model = YOLO('path/to/config.yaml')
-
         # Merge and load weights, and save merged checkpoint
         loaded_model = merge_and_load_model_weights(
             model=model,
@@ -294,8 +289,6 @@ if __name__ == "__main__":
     print("2. Initialize your model")
     print("3. Call merge_and_load_model_weights function")
     print("\nExample code:")
-    print("from ultralytics import YOLO")
-    print("model = YOLO('config.yaml')")
     print("loaded_model = merge_and_load_model_weights(")
     print("    model=model,")
     print("    lightweight_path='orgdet.pt',")
