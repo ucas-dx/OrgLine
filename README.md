@@ -49,8 +49,12 @@ git clone https://github.com/ucas-dx/OrgLine.git
 # Change to the project directory containing all necessary files
 cd OrgLine
 
-# This installs the package and its dependencies while allowing local modifications
-pip install -e .[cuda121]
+# For Linux systems - direct installation with CUDA 12.1 support
+pip install -e .
+
+# For Windows systems - install PyTorch with CUDA 12.1 first, then the package
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
+pip install -e .
 ```
 
 ### • Image Format Support Configuration
