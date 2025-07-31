@@ -6,9 +6,9 @@
 # PyTorch and Deep Learning Framework
 # Note: Install with CUDA support using:
 # pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
-torch==2.4.0
-torchvision==0.19.0
-torchaudio==2.4.0
+torch==2.4.0 --index-url https://download.pytorch.org/whl/cu121
+torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
+torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
 
 # Computer Vision and Image Processing
 opencv-python>=4.5.0
