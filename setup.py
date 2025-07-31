@@ -45,7 +45,7 @@ def get_requirements():
 
 setup(
     name="orgline",
-    version="0.1.0",
+    version="1.0.0",
     author="Xun Deng, Xinyu Hao, Pengwei Hu", 
     author_email="hpw@ms.xjb.ac.cn",
     description="The first multitask analysis pipeline for organoids with foundation models",
