@@ -50,7 +50,7 @@ git clone https://github.com/ucas-dx/OrgLine.git
 cd OrgLine
 
 # This installs the package and its dependencies while allowing local modifications
-python install -e .
+pip install -e .
 ```
 
 ### • Image Format Support Configuration
