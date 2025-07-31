@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 import os
+import platform
 
 # Safely read README.md
 def get_long_description():
@@ -21,10 +22,8 @@ def get_requirements():
                     line = line.strip()
                     # Skip empty lines, comments, and special directives
                     if line and not line.startswith("#") and not line.startswith("-"):
-                        # Handle special PyTorch install instructions
-                        if "torch" in line and "--index-url" not in line:
-                            requirements.append(line)
-                        elif "torch" not in line and "git+" not in line:
+                        # Skip PyTorch packages as they will be handled separately
+                        if not any(pkg in line.lower() for pkg in ["torch", "torchvision", "torchaudio"]):
                             requirements.append(line)
         except Exception as e:
             print(f"Warning: Could not read requirements.txt: {e}")
@@ -42,6 +41,25 @@ def get_requirements():
         ]
     
     return requirements
+
+# Determine default PyTorch installation based on platform
+def get_default_torch_requires():
+    """Return default PyTorch dependencies based on platform"""
+    system = platform.system().lower()
+    if system == "windows":
+        # On Windows, default to CUDA if available
+        return [
+            "torch>=2.0.0",
+            "torchvision>=0.15.0", 
+            "torchaudio>=2.0.0",
+        ]
+    else:
+        # On Linux/Mac, use CPU version as default
+        return [
+            "torch>=2.0.0",
+            "torchvision>=0.15.0",
+            "torchaudio>=2.0.0",
+        ]
 
 setup(
     name="orgline",
@@ -72,24 +90,51 @@ setup(
     keywords="organoid, analysis, detection, segmentation, foundation model, computer vision, biomedical imaging",
     python_requires=">=3.8",
     
-    # Automatically install dependencies from requirements.txt
+    # Base requirements without PyTorch
     install_requires=get_requirements(),
     
-    # Optional extra dependencies
+    # Optional extra dependencies with specific PyTorch versions
     extras_require={
-        "torch": [
-            "torch>=1.12.0",
-            "torchvision>=0.13.0",
-            "torchaudio>=0.12.0",
+        # CPU version (default)
+        "cpu": [
+            "torch==2.4.0",
+            "torchvision==0.19.0",
+            "torchaudio==2.4.0",
         ],
+        
+        # CUDA 11.8 support
         "cuda118": [
             "torch==2.3.0",
             "torchvision==0.18.0", 
             "torchaudio==2.3.0",
         ],
+        
+        # CUDA 12.1 support (new)
+        "cuda121": [
+            "torch==2.4.0",
+            "torchvision==0.19.0",
+            "torchaudio==2.4.0",
+        ],
+        
+        # CUDA 12.4 support (latest)
+        "cuda124": [
+            "torch==2.4.0",
+            "torchvision==0.19.0",
+            "torchaudio==2.4.0",
+        ],
+        
+        # Generic CUDA version
+        "cuda": [
+            "torch==2.4.0",
+            "torchvision==0.19.0",
+            "torchaudio==2.4.0",
+        ],
+        
+        # Full installation (includes all optional dependencies)
         "full": [
-            "torch>=1.12.0",
-            "torchvision>=0.13.0",
+            "torch==2.4.0",
+            "torchvision==0.19.0",
+            "torchaudio==2.4.0",
             "einops>=0.6.0",
             "timm>=0.9.0",
             "albumentations>=1.0.0",
@@ -97,6 +142,8 @@ setup(
             "jupyter>=1.0.0",
             "notebook>=6.0.0",
         ],
+        
+        # Development dependencies
         "dev": [
             "pytest>=6.0",
             "pytest-cov>=2.0",
