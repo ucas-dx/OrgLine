@@ -13,9 +13,10 @@ torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
 # Computer Vision and Image Processing
 opencv-python==4.5.*
 opencv-contrib-python==4.5.*
-pillow>=8.0.0
-imageio>=2.9.0
-scikit-image>=0.18.0
+opencv-python-headless==4.5.*
+pillow==8.0.0
+imageio==2.9.0
+scikit-image==0.18.0
 
 # Scientific Computing and Numerical Libraries
 numpy>=1.21.0
@@ -50,7 +51,7 @@ pynvml>=11.0.0               # NVIDIA GPU monitoring
 
 # File I/O and Data Formats
 h5py>=3.1.0
-pycocotools>=2.0.4           # COCO dataset format
+pycocotools=2.0.4           # COCO dataset format
 json5>=0.9.0
 
 # Segment Anything Model (SAM) dependencies
