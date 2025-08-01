@@ -54,6 +54,9 @@ pip install -e .
 
 # For Windows systems - install PyTorch with CUDA 12.1 first, then the package
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 numpy==1.26.* --index-url https://download.pytorch.org/whl/cu121
+#or
+conda install pytorch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+
 pip install -e .
 ```
 
