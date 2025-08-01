@@ -14,9 +14,9 @@ torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121
 opencv-python==4.5.*
 opencv-contrib-python==4.5.*
 opencv-python-headless==4.5.*
-pillow==8.0.*
-imageio==2.9.*
-scikit-image==0.18.*
+pillow>=8.0.*
+imageio>=2.9.*
+scikit-image>=0.18.*
 
 # Scientific Computing and Numerical Libraries
 numpy>=1.21.0
