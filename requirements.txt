@@ -51,7 +51,7 @@ pynvml>=11.0.0               # NVIDIA GPU monitoring
 
 # File I/O and Data Formats
 h5py>=3.1.0
-pycocotools=2.0.4           # COCO dataset format
+pycocotools==2.0.4           # COCO dataset format
 json5>=0.9.0
 
 # Segment Anything Model (SAM) dependencies
