@@ -136,7 +136,7 @@ datasets/
   * **Config**: same as above, or `orgdet_tiny_pan.yaml`
   * **Detector weights**: `orgdet_tiny.pt` **Download**: [Direct Link](https://drive.google.com/file/d/169OIs_wCGidXcbe5g6u3kWcji3PKhlmW/view?usp=sharing)
   * **Best for**: limited VRAM, quick prototyping
-
+  **Note:** Fine-tuned mask decoder weights are coming soon.
   
 ## 🚀 OrgLine: Quick Usage Guide
 
