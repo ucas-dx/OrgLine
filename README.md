@@ -1,5 +1,4 @@
-# OrgLine: An AI-Driven Versatile Pipeline for Organoid with a Foundation Model
-
+# OrgLine: a versatile pipeline for organoid morphometry using detector guided prompts
 **Authors:**  
 Xun Deng¹'², Xinyu Hao³, Thomas Herget⁴, Mei Gao⁵, Mathias Winkel⁶, Feng Tan⁶, Lun Hu¹'², and Pengwei Hu¹'²*
 
